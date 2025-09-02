@@ -151,6 +151,4 @@ This project successfully demonstrates the application of K-means clustering for
 
 ---
 
-**Project Status**: Complete ✅  
-**Last Updated**: September 2025  
 **Author**: Jaideep193
