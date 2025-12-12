@@ -74,6 +74,11 @@ The project uses the Mall_Customers.csv dataset containing:
 
 ## Key Results
 
+### Performance Metrics
+- **Elbow Method**: Optimal clusters identified through Within-Cluster Sum of Squares (WCSS) analysis
+- **Silhouette Score**: Measures cluster quality and separation
+- **Cluster Compactness**: Evaluated using centroid distances
+
 ### Customer Segments Identified:
 
 #### Primary Analysis (Annual Income vs Spending Score - 5 Clusters):
@@ -127,14 +132,62 @@ SCT_ML_2/
 └── README.md                   # Project documentation
 ```
 
-## Usage Instructions
-1. **Setup Environment**: Install required libraries
+## Getting Started
+
+### Prerequisites
+- Python 3.8 or higher
+- Jupyter Notebook or JupyterLab
+
+### Installation
+
+1. **Clone the repository**:
    ```bash
-   pip install pandas numpy matplotlib seaborn plotly scikit-learn
+   git clone https://github.com/Jaideep193/SCT_ML_2.git
+   cd SCT_ML_2
    ```
-2. **Run Analysis**: Open and execute `task2.ipynb` in Jupyter Notebook
-3. **Explore Results**: Review generated visualizations and cluster assignments
-4. **Customize Analysis**: Modify clustering parameters or add new features
+
+2. **Create a virtual environment** (recommended):
+   ```bash
+   python -m venv venv
+   source venv/bin/activate  # On Windows: venv\Scripts\activate
+   ```
+
+3. **Install required libraries**:
+   ```bash
+   pip install -r requirements.txt
+   ```
+
+### Usage Instructions
+
+1. **Launch Jupyter Notebook**:
+   ```bash
+   jupyter notebook
+   ```
+
+2. **Open the analysis notebook**:
+   - Navigate to `task2.ipynb` in the Jupyter interface
+   - Run all cells sequentially (Cell → Run All)
+
+3. **Explore Results**:
+   - Review generated visualizations and cluster assignments
+   - Examine the clustering metrics and statistics
+   - Analyze the customer segments identified
+
+4. **Customize Analysis**:
+   - Modify the number of clusters in the KMeans parameters
+   - Test different feature combinations
+   - Adjust visualization parameters
+
+### Troubleshooting
+
+**Issue**: Module import errors
+- **Solution**: Ensure all dependencies are installed: `pip install -r requirements.txt`
+
+**Issue**: Jupyter Notebook not found
+- **Solution**: Install Jupyter: `pip install jupyter notebook`
+
+**Issue**: Plotly visualizations not displaying
+- **Solution**: Install plotly extensions: `pip install plotly` and restart Jupyter
 
 ## Future Enhancements
 - **Advanced Algorithms**: Implement DBSCAN, Hierarchical clustering
@@ -146,5 +199,20 @@ SCT_ML_2/
 ## Conclusion
 This project successfully demonstrates the application of K-means clustering for customer segmentation in retail environments. The comprehensive analysis provides actionable insights for business strategy development, with multiple visualization approaches making the results accessible to both technical and non-technical stakeholders. The identified customer segments enable data-driven decision making for marketing, product development, and customer relationship management initiatives.
 
----
+## Contributing
+Contributions are welcome! Please feel free to submit a Pull Request. For major changes, please open an issue first to discuss what you would like to change.
+
+## License
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+## Acknowledgments
+- Dataset source: Mall Customer Segmentation Data
+- Built as part of the SkillCraft Technology Machine Learning Internship Program
+
+## Contact
 **Author**: Jaideep193
+- GitHub: [@Jaideep193](https://github.com/Jaideep193)
+
+---
+*Last Updated: December 2025*
+
